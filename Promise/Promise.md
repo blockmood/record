@@ -66,3 +66,36 @@ new MyPromise((resolve, reject)=>{
 ```
 
 ## Promise.all
+
+```
+function PromiseAll(arr){
+    let index = 0;
+    let sendArr = []
+    return new Promise((resolve,reject) => {
+        arr.forEach(item => {
+            index++;
+            promise.resolve(item).then(res => {
+               sendArr.push(res)
+            })
+        })
+        if(index == arr.length){
+            resolve(sendArr)
+        }
+    })
+}
+
+```
+
+## Promise.race
+
+```
+function PromiseRace(arr){
+    return new Promise((resolve,reject) => {
+        arr.forEach(item => {
+            Promise.resolve(item).then(res => {
+               resolve(res)
+            })
+        })
+    })
+}
+```
