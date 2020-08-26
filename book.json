@@ -1,0 +1,7 @@
+{
+  "title": "",
+  "plugins": ["back-to-top-button", "expandable-chapters-small"],
+  "styles": {
+    "website": "./website.css"
+  }
+}
