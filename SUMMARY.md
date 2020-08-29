@@ -5,3 +5,5 @@
   - [Promise 面试题](/Promise/Promise.md)
 
   - [Array 相关面试题](/Array/Array.md)
+
+  - [柯里化](/Curry/Curry.md)
