@@ -6,4 +6,6 @@
 
   - [Array 相关面试题](/Array/Array.md)
 
+  - [Object 相关面试题](/Object/Object.md)
+
   - [柯里化](/Curry/Curry.md)
