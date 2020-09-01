@@ -24,3 +24,16 @@ Function.prototype.apply = function(context){
 }
 
 ```
+
+## bind 实现
+
+```
+Function.prototype.bind2 = function(context){
+	var args = [].splice.call(arguments,1)
+	var self = this
+	return function(){
+		return self.apply(context,[...args,...arguments])
+	}
+}
+
+```
