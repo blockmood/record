@@ -11,3 +11,5 @@
   - [Function 相关面试题](/Function/Function.md)
 
   - [柯里化](/Curry/Curry.md)
+
+  - [Hooks 好处](/Hooks/Hooks.md)
