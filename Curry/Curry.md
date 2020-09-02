@@ -4,7 +4,7 @@
 function curry(fn){
   let args = []
   return function temp(...newArgs){
-    if(args.length){
+    if(newArgs.length){
       args = [
         ...args,
         ...newArgs
@@ -15,6 +15,26 @@ function curry(fn){
       args = []
       return val
     }
+  }
+}
+```
+
+## componse 实现
+
+```
+const compose = (...funcs) => {
+  return initialVal => {
+    return funcs.reduceRight((a,b)=>b(a),initialVal)
+  }
+}
+```
+
+## pipe 实现
+
+```
+const pipe = (...funcs) => {
+  return initialVal => {
+    return funcs.reduce((a,b)=>b(a),initialVal)
   }
 }
 ```

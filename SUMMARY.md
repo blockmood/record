@@ -10,6 +10,6 @@
 
   - [Function 相关面试题](/Function/Function.md)
 
-  - [柯里化](/Curry/Curry.md)
+  - [柯里化 高阶函数等 ](/Curry/Curry.md)
 
   - [Hooks 好处](/Hooks/Hooks.md)
