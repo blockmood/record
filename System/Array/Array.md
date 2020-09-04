@@ -42,3 +42,13 @@ function reduce(arr,reduceCallback,initialValue){
   }
 }
 ```
+
+## 数组摊平 flatten
+
+```
+const flatten = arr => {
+  return arr.reduce((a,b) => {
+    return Array.isArray(b) ? [...a,...flatten(b)] : [...a,b]
+  },[])
+}
+```

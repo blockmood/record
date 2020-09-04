@@ -17,6 +17,8 @@
 
   - [防抖 节流 ](System/Debounce/index.md)
 
+  - [发布订阅模式](System/Event/index.md)
+
 - [相关文章](Books.md)
 
   - [React 相关](Books/React.md)
