@@ -10,14 +10,16 @@ Object.assgin(obj)
 ```
 const deepCopy = (targte,map = new Map()) => {
   if(typeof target == 'object'){
-    let cloneObj = !Array.isArray(targte) ? {} : []
+    let cloneTarget = !Array.isArray(targte) ? {} : []
     //解决循环引用
     if(map.get(targte)){
       return targte
     }
+    map.set(target, cloneTarget);
     for(let key in targte){
       cloneObj[key] = deepCopy(targte[key],map)
     }
+    return cloneTarget
   }else{
     return targte
   }
