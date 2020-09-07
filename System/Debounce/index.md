@@ -20,13 +20,13 @@ function debounce(fn,await){
 
 ```
 function throttle(fn,await){
-  const initialTime = +new Date()
+  const initialTime = 0
   return function(){
     var context = this,args = arguments;
     const nowTime = +new Date()
     if(nowTime - initialTime >= await){
       fn.apply(context,args)
-      initialTime = +new Date()
+      initialTime = nowTime
     }
   }
 }
