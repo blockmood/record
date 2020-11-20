@@ -1,5 +1,7 @@
 ### React 相关文章
 
+[diff 详解](https://zhuanlan.zhihu.com/p/20346379)
+
 [源码解析](https://juejin.im/post/6844903568487497741)
 
 [react 技术揭秘](https://react.iamkasong.com/)
