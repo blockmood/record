@@ -17,7 +17,7 @@ const deepCopy = (targte,map = new Map()) => {
     }
     map.set(target, cloneTarget);
     for(let key in targte){
-      cloneObj[key] = deepCopy(targte[key],map)
+      cloneTarget[key] = deepCopy(targte[key],map)
     }
     return cloneTarget
   }else{
