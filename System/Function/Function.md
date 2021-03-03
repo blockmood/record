@@ -1,7 +1,7 @@
 ## call 实现
 
 ```
-Function.prototype.call = function(content,...args){
+Function.prototype.call = function(content){
   content = content || window
   args = [].slice.call(arguments,1)
   content.fn = this
@@ -14,14 +14,23 @@ Function.prototype.call = function(content,...args){
 ## apply 实现
 
 ```
-Function.prototype.apply = function(context){
-	context = context || window
-	args = [...arguments][1]
-	context.fn = this
-	const result = context.fn(...args)
-	delete context[fn];
+Function.prototype.apply = function(content,args){
+	content = content || window
+	content.fn = this
+	var result;
+	if(!args){
+		result = content.fn()
+	}else{
+		var newArgs = []
+		for(let i=0;i<args.length;i++){
+			newArgs.push(args[i])
+		}
+		result = content.fn(...newArgs)
+	}
+	delete content.fn
 	return result
 }
+s
 
 ```
 
@@ -29,7 +38,7 @@ Function.prototype.apply = function(context){
 
 ```
 Function.prototype.bind2 = function(context){
-	var args = [].splice.call(arguments,1)
+	var args = [].slice.call(arguments,1)
 	var self = this
 	return function(){
 		return self.apply(context,[...args,...arguments])
