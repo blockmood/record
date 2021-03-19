@@ -31,6 +31,8 @@
 
   - [webpack 打包核心原理](Webpack/Core.md)
 
+  - [webpack 异步加载原理](Webpack/Async.md)
+
 - [理解篇](Understand.md)
 
   - [Hooks 好处](Understand/Hooks.md)
