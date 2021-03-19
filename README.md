@@ -16,8 +16,6 @@
 
 [抓包工具](https://www.juejin.im/post/6875474994336366606)
 
-[webpack 异步加载原理](https://juejin.cn/post/6844904033681948686)
-
 [js 文件下载](https://juejin.cn/post/6867469476196155400)
 
 [前端性能优化](https://juejin.cn/post/6904517485349830670)
