@@ -21,3 +21,5 @@
 [前端性能优化](https://juejin.cn/post/6904517485349830670)
 
 [从输入 url 到访问到内容经历了什么](https://dailc.github.io/2018/03/12/whenyouenteraurl.html)
+
+[promise详解](http://www.html-js.com/article/Promise-translation-JavaScript-Promise-devil-details)
